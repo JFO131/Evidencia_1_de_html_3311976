@@ -3,7 +3,6 @@
 //     tienen elementos dentro
 //     permite especificar propiedade 
 //     ubicacion
-
 // Dfinamos las propidades
 // que pude recibir el componente
 interface Props {
@@ -18,19 +17,46 @@ interface Props {
 ---
 <label>{etiqueta}</label>
 <div>
+    <div id="cedula">
      <input 
         type="radio"
         name="rbg"
         id="radio1"
-     /> CC
-     <input
+     /> <strong> CC </strong>
+    </div>
+    <div id="tarjeta"> 
+        <input
         type="radio"
         name="rbg"
         id="radio2"
-    /> TI
+    />  <strong> TI </strong>
+    </div>
+    <div id="extranjero">
     <input
         type="radio"
         name="rbg"
         id="radio3"
-    /> CE
+    /> <strong> CE </strong>
 </div>
+</div>
+<style>
+    /* estilos de atributos
+    /* se aplican a los elementos
+    /* que tengan el atributo*/
+    #cedula{
+        background-color: yellow;
+        /* display:
+        determina como una etiqueta
+        se comporta en cuanto a:display:
+        largo, ancho, ubicacion;*/
+        display: inline;
+    }
+    #tarjeta{
+        background-color: aquamarine;
+        display: inline;
+    }
+    #extranjero{
+        background-color: rgb(8, 176, 253);
+        display: inline;
+    }
+</style>
